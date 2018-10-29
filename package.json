@@ -1,7 +1,7 @@
 {
   "name": "natours",
   "version": "1.0.0",
-  "description": "Landing page for Natours",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass sass/main.scss css/style.css -w",
@@ -9,10 +9,10 @@
   },
   "author": "Ilyas",
   "license": "ISC",
-  "homepage": "https://assainov.github.io/natours",
   "devDependencies": {
     "node-sass": "^4.9.3"
   },
+  "homepage": "https://assainov/github.io/natours",
   "dependencies": {
     "gh-pages": "^2.0.1"
   }
