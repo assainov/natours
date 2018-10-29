@@ -4,6 +4,10 @@
 
         &:not(:first-child) {
             margin-top: 2rem;
+
+            @include respond(tab-land) {
+                margin-top: 1rem;
+            }
         }
     }
 
@@ -17,6 +21,10 @@
         color: inherit;
         border-bottom: 3px solid transparent;
         transition: border-bottom 0.5s;
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
 
         &:focus {
             outline: none;
@@ -57,6 +65,13 @@
     &__radio-group {
         width: 49%;
         display: inline-block;
+
+        @include respond(phone) {
+            width: 100%;
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+        }
     }
 
     &__radio-input {

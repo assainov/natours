@@ -4,12 +4,16 @@
   "description": "Landing page for Natours",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "deploy": "gh-pages dist -d"
   },
   "author": "Ilyas",
   "license": "ISC",
+  "homepage": "https://assainov.github.io/natours",
   "devDependencies": {
     "node-sass": "^4.9.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
