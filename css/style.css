@@ -419,23 +419,31 @@ body {
     font-weight: 300; }
   @media (max-width: 56.25em) {
     .price-card {
+      margin: 0 7rem;
+      -webkit-perspective: 150rem;
       perspective: 150rem;
       -moz-perspective: 150rem;
       position: relative;
       height: auto;
       border-radius: 0.5rem;
       background-color: #fff;
+      -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
       .price-card__side {
         height: auto;
         position: relative;
+        -webkit-box-shadow: none;
         box-shadow: none; }
         .price-card__side--back {
+          -webkit-transform: rotateY(0);
           transform: rotateY(0);
+          -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0% 100%); }
       .price-card:hover .price-card__side--front {
+        -webkit-transform: rotateY(0);
         transform: rotateY(0); }
       .price-card:hover .price-card__side--back {
+        -webkit-transform: rotateY(0);
         transform: rotateY(0); }
       .price-card__details ul {
         padding: 1rem; }
@@ -443,6 +451,8 @@ body {
         position: relative;
         top: 0;
         left: 0;
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
         transform: translate(0);
         width: 100%;
         padding: 5rem; }
