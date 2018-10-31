@@ -218,4 +218,9 @@
             font-weight: 300;
         }
     }
+
+    @include respond(phone) {
+        
+        margin: 0;
+    }
 }
