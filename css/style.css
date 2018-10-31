@@ -461,6 +461,9 @@ body {
       .price-card__price-value {
         font-size: 6rem;
         font-weight: 300; } }
+  @media (max-width: 37.5em) {
+    .price-card {
+      margin: 0; } }
 
 .story {
   width: 75%;
